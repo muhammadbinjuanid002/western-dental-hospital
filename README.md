@@ -1,12 +1,41 @@
-# Western Dental Hospital - landing page demo
+# Western Dental Hospital — landing page demo
 
-Preview design by MO Digital. Not affiliated with Western Dental Hospital.
+A single-page design preview prepared by **MO Digital** for Western Dental Hospital.
 
-- Clinic: Western Dental Hospital
-- Address: Bungalow 2, FL 6, Block 4, Gulshan-e-Iqbal, Karachi
-- Phone: 0320 0002400
-- Live demo: https://western-dental-hospital.vercel.app
+> This is a design preview. It is not the official website of Western Dental Hospital,
+> and Western Dental Hospital is not affiliated with MO Digital. The contact details shown
+> are the clinic's own public details.
 
-This repository holds a single self-contained `index.html` (inline CSS, no build step). The page is a design preview built by MO Digital for Western Dental Hospital, Karachi.
+## Live preview
 
-Booking on the page: Book on WhatsApp (the form opens WhatsApp with the details filled in), or call 0320 0002400.
+https://western-dental-hospital.vercel.app
+
+## What is in here
+
+| Path | What it is |
+|---|---|
+| `index.html` | The whole page: markup, inlined CSS and inlined JS in one file |
+| `assets/img/` | Photography, cropped WebP, served from this repo (no third-party hotlinking) |
+| `assets/fonts/` | Instrument Serif + Inter Tight, subset WOFF2, served from this repo |
+| `vercel.json` | Vercel project settings (`outputDirectory: "."`) |
+
+## Design notes
+
+- Dark editorial canvas, cream type, one warm accent per clinic.
+- Instrument Serif for display, Inter Tight for interface and body copy.
+- Scroll reveal via `IntersectionObserver`; respects `prefers-reduced-motion`.
+- Horizontal treatment carousel with a `01 / NN` counter, built in plain JS.
+- Mobile-first: the layout is designed at 390px and scales up.
+- No framework, no build step, no external requests at runtime.
+
+## Booking
+
+WhatsApp booking on **0320 0002400** - the booking form composes a message with the patient's details.
+
+## Data shown
+
+Clinic name, address, phone number and the Google rating (4.4 stars, 235 reviews) are the clinic's own verified public details. No doctors, prices, testimonials or opening hours have been invented.
+
+---
+
+Design and build by [MO Digital](https://bymo.vercel.app)
